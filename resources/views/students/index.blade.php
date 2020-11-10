@@ -9,7 +9,7 @@
     <div style="text-align: center;">
      <!-- City Dropdown -->
       Град: <select id='sel_city' name='sel_city'>
-      <option value='0'>--   Град   --</option>
+      <option value='0'>Град<</option>
  
        <!-- Read City -->
        @foreach($cityData as $city)
@@ -21,7 +21,7 @@
     <br><br>
     <!-- City Schools Dropdown -->
     Училище: <select id='sel_schools' name='sel_schools'>
-       <option value='0'>--   Училище   --</option>
+      <option value='0'>Училище</option>
     </select>
   </div>
     <script src="{{ asset('js/student.js') }}" defer></script>
