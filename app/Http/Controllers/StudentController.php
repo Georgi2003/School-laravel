@@ -22,7 +22,6 @@ class StudentController extends Controller
                        ->select('id','name')
                        ->get();
 
-        // Load index view
         return view('students.index', [
             'cityData' => $cityData
         ]);
@@ -33,7 +32,7 @@ class StudentController extends Controller
         // Fetch Employees by Departmentid
         $schoolData['data'] = School::orderby("name","asc")
                     ->select('id','name')
-                    ->where('city_id',$cityId)
+                    ->where('city_id', $cityId)
                     ->get();
   
         return response()->json($schoolData);

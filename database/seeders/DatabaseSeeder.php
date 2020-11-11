@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Database\Seeders\UserSeeder;
+use Database\Seeders\CitySeeder;
+use Database\Seeders\SchoolSeeder;
+use Database\Seeders\StudentSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,7 +18,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-        	UserSeeder::class
+        	UserSeeder::class,
+            CitySeeder::class,
+            SchoolSeeder::class,
+            StudentSeeder::class,
         ]);
     }
 }

@@ -9,7 +9,7 @@
     <div style="text-align: center;">
      <!-- City Dropdown -->
       Град: <select id='sel_city' name='sel_city'>
-      <option value='0'>Град<</option>
+      <option value='0'>Град</option>
  
        <!-- Read City -->
        @foreach($cityData as $city)
