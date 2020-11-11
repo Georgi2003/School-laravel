@@ -22,8 +22,11 @@ class StudentController extends Controller
                        ->select('id','name')
                        ->get();
 
+        $students = Student::all();
+
         return view('students.index', [
-            'cityData' => $cityData
+            'cityData' => $cityData,
+            'allStudents' => $students
         ]);
     }
 
@@ -57,7 +60,17 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'age' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'school_id' => 'required',
+        ]);
+        $students = Student::create($data);
+
+        return Response::json($students);
     }
 
     /**

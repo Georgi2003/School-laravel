@@ -5,9 +5,7 @@
         </h2>
     </x-slot>
     <br>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    
     <div class="container">
 
     <div class="d-flex bd-highlight mb-4">
@@ -95,7 +93,5 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="{{ asset('js/city.js') }}" defer></script>
 </x-app-layout>

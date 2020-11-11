@@ -10,10 +10,11 @@ class Student extends Model
 	public $timestamps = false;
 	
 	protected $fillable = [
-    	'first_nam',
+    	'first_name',
 		'last_name',
 		'age',
 		'email',
 		'phone',
+		'school_id' 
 	];
 }
