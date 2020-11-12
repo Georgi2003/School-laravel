@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
     <br>
-    
+
     <div class="container">
 
     <div class="d-flex bd-highlight mb-4">
@@ -54,7 +54,6 @@
                         </button>
                     </td>
                 </tr>
-            </td>
                 @endforeach
             </tbody>
         </table>
